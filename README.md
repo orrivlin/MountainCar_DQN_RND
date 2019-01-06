@@ -10,6 +10,10 @@ This plot shows accumulated returns against episode:
 
 ![Alt text](https://user-images.githubusercontent.com/46422351/50738799-a29c2780-11e0-11e9-82f4-e1ac46ee1a3e.png)
 
+And this one shows the augmented returns, after adding the exploration bonus given by RND:
+
+![Alt text]()
+
 
 1. Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).
 2. Burda, Yuri, et al. "Exploration by random network distillation." arXiv preprint arXiv:1810.12894 (2018).

@@ -106,26 +106,7 @@ class DQN_RND:
         R1 = torch.tensor( R1, dtype=torch.float).view(K, -1)
         S1 = torch.tensor( S1, dtype=torch.float)
         D1 = torch.tensor( D1, dtype=torch.float)
-        #'''
-        for i in range(K):
-            st = torch.Tensor(samples[i][0]).unsqueeze(0)
-            at = torch.LongTensor(samples[i][1]).unsqueeze(0)
-            rt = torch.Tensor(np.array(samples[i][2])).unsqueeze(0)
-            stt = torch.Tensor(samples[i][3]).unsqueeze(0)
-            dt = torch.Tensor(np.array(float(samples[i][4]))).unsqueeze(0)
-            if (i==0):
-                St = st
-                At = at
-                Rt = rt
-                Stt = stt
-                Dt = dt
-            else:
-                St = torch.cat([St,st],dim=0)
-                At = torch.cat([At,at],dim=0)
-                Rt = torch.cat([Rt,rt],dim=0)
-                Stt = torch.cat([Stt,stt],dim=0)
-                Dt = torch.cat([Dt,dt],dim=0)
-        #'''        
+       
         Ri = self.rnd.get_reward(S0)
         self.rnd.update(Ri)
         target_q = R1.squeeze() + self.gamma*self.target_model(S1).max(dim=1)[0].detach()*(1 - D1)

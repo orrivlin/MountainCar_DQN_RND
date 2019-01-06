@@ -1,8 +1,5 @@
 
-# -*- coding: utf-8 -*-
 """
-Created on Mon Dec 31 11:11:08 2018
-
 @author: orrivlin
 """
 

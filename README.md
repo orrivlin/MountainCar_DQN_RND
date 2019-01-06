@@ -6,6 +6,7 @@ Usually this is circumvented buy engineering the reward signal in order to get a
 
 This project opts for a methodical way of exploration, that is not domain specific, by using Exploration By Random Network Distillation [2], a method developed by OpenAI researchers by hard exploration games like Montezuma's Revenge. This method trains a neural network to try and predict the outputs of a different random neural network, and the prediction error is added to the true reward signal. By updating the network, what we gain is a measure of "familiarity" with game states, encouraging our RL algorithm to explore those states that we are not familiar with and eventually discovering positive feedbacks.
 
+
 1. Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).
 2. Burda, Yuri, et al. "Exploration by random network distillation." arXiv preprint arXiv:1810.12894 (2018).
 

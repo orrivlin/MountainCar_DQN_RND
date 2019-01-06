@@ -12,7 +12,7 @@ This plot shows accumulated returns against episode:
 
 And this one shows the augmented returns, after adding the exploration bonus given by RND:
 
-![Alt text]()
+![Alt text](https://user-images.githubusercontent.com/46422351/50738963-fe1ae500-11e1-11e9-9cf1-084f067ef79f.png)
 
 
 1. Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).

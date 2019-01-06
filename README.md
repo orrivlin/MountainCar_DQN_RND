@@ -1,5 +1,5 @@
 # MountainCar_DQN_RND
-*Playing Mountain-Car without reward engineering, by combining DQN and Random Network Distillation (RND).*
+### Playing Mountain-Car without reward engineering, by combining DQN and Random Network Distillation (RND).
 
 This project contains a simple implementation of DQN [1] for playing Mountain-Car. Mountain-Car is a classic control game in which a car must swing back and forth in order to reach the flag on top of the mountain. Unlike other classic problems like CartPole, the reward in Mountain-Car is sparse as positive feedback is only given upon reaching the flag, which is unlikely with random actions.
 Usually this is circumvented buy engineering the reward signal in order to get a smoother learning process, by using the velocity or piostion increments as additional rewards, but for general problems, this may not be easy to do, as it requires some knowledge about how to solve the problem.

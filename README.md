@@ -2,7 +2,7 @@
 ### Playing Mountain-Car without reward engineering, by combining DQN and Random Network Distillation (RND).
 
 This project contains a simple PyTorch implementation of DQN [1] for playing Mountain-Car. Mountain-Car is a classic control game in which a car must swing back and forth in order to reach the flag on top of the mountain. Unlike other classic problems like CartPole, the reward in Mountain-Car is sparse as positive feedback is only given upon reaching the flag, which is unlikely with random actions.
-Usually this is circumvented by engineering the reward signal in order to get a smoother learning process, by using the velocity or piostion increments as additional rewards, but for general problems, this may not be easy to do, as it requires some knowledge about how to solve the problem.
+Usually this is circumvented by engineering the reward signal in order to get a smoother learning process, by using the velocity or position increments as additional rewards, but for general problems, this may not be easy to do, as it requires some knowledge about how to solve the problem.
 
 This project opts for a methodical way of exploration, that is not domain specific, by using Exploration By Random Network Distillation [2], a method developed by OpenAI researchers for hard exploration games like Montezuma's Revenge. This method trains a neural network to try and predict the outputs of a different random neural network, and the prediction error is added to the true reward signal. By updating the network, what we gain is a measure of "familiarity" with game states, encouraging our RL algorithm to explore those states that we are not familiar with and eventually discovering positive feedbacks.
 

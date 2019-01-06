@@ -1,7 +1,4 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Jan  3 14:23:15 2019
-
 @author: orrivlin
 """
 

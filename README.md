@@ -14,6 +14,9 @@ And this one shows the augmented returns, after adding the exploration bonus giv
 
 ![Alt text](https://user-images.githubusercontent.com/46422351/50738963-fe1ae500-11e1-11e9-9cf1-084f067ef79f.png)
 
+I wrote a MEDIUM post about Random Network Distillation that explains the rationale behind this method in more detail:
+![Alt text](https://medium.com/@or.rivlin.mail/reinforcement-learning-with-exploration-by-random-network-distillation-a3e412004402)
+
 
 1. Mnih, Volodymyr, et al. "Playing atari with deep reinforcement learning." arXiv preprint arXiv:1312.5602 (2013).
 2. Burda, Yuri, et al. "Exploration by random network distillation." arXiv preprint arXiv:1810.12894 (2018).

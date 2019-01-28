@@ -14,7 +14,8 @@ And this one shows the augmented returns, after adding the exploration bonus giv
 
 ![Alt text](https://user-images.githubusercontent.com/46422351/50738963-fe1ae500-11e1-11e9-9cf1-084f067ef79f.png)
 
-I wrote a [MEDIUM post](https://medium.com/@or.rivlin.mail/reinforcement-learning-with-exploration-by-random-network-distillation-a3e412004402) about Random Network Distillation that explains the rationale behind this method in more detail:
+I wrote a [MEDIUM post](https://medium.com/@or.rivlin.mail/reinforcement-learning-with-exploration-by-random-network-distillation-a3e412004402) about Random Network Distillation that explains the rationale behind this method in more detail.
+
 
 
 
